@@ -7,22 +7,22 @@ Budget Planner is a financial planning web app that allows users to track their 
 
 ## Build Criteria 
 
-● React
-● React BootStrap/Bootstrap
-● CSS
-● LocalStorage
+<li> React
+<li> React BootStrap/Bootstrap
+<li> CSS
+<li> LocalStorage
 
 ## User Stories
 
 The following is a list of user stories:
 
-● As a user, I want to be able to add a budget amount;
-● As a user, I want to be able to edit a budget amount;
-● As a user, I want to be able to delete a budget amount;
-● As a user, I want to be able to add expenses from the budget;
-● As a user, I want to be able to edit expenses from the budget;
-● As a user, I want to be able to delete expenses from the budget;
-● As a user, I want to be able to see my total balance after expenses have been extracted from my budgeted amount.
+<li> As a user, I want to be able to add a budget amount;
+<li> As a user, I want to be able to edit a budget amount;
+<li> As a user, I want to be able to delete a budget amount;
+<li> As a user, I want to be able to add expenses from the budget;
+<li> As a user, I want to be able to edit expenses from the budget;
+<li> As a user, I want to be able to delete expenses from the budget;
+<li> As a user, I want to be able to see my total balance after expenses have been extracted from my budgeted amount.
 
 ## Key Features
 
