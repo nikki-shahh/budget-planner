@@ -1,5 +1,6 @@
 import React from 'react';
 import Balance from './components/balance-view';
+import Expenses from './components/expense-view/expenses-total';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -18,7 +19,7 @@ function App() {
         </div>
         <div className="row mt-2">
           <div className="col-sm d-flex justify-content-center">
-
+            <Expenses />
           </div>
           <div className="col-sm d-flex justify-content-center">
 
