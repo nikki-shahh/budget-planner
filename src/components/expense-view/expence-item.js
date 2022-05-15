@@ -22,6 +22,9 @@ function ExpenseItem(props) {
                 <span className="badge-primary badge-pill mr-3">
                     ${props.cost}
                 </span>
+                <button type='button' class='btn' onClick={props.handleEditClick}>
+                    Edit
+                </button>
                 <RiDeleteBin6Line onClick={handleDeleteExpens}></RiDeleteBin6Line>
             </div>
 

@@ -15,10 +15,17 @@ function AppReducer(state, action) {
                     (expense) => expense.id !== action.payload
                 ),
             }
+        case 'SET_INCOME':
+            return {
+                ...state,
+                income: action.payload,
+            };
         default:
             return state;
     }
 }
+export default AppReducer;
+
 const initialState = {
     income: 3000,
     expenses: [
