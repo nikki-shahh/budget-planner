@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { RiDeleteBin6Line, RiCheckboxBlankCircleLine } from "react-icons/ri";
+import { AppContext } from "../../context/AppContext";
 
 function ExpenseItem(props) {
+    const { dispatch } = useContext(AppContext);
+
+    function handleDeleteExpens() {
+        dispatch({
+            type: 'DELETE-EXPENSE',
+            payload: props.id,
+        });
+    };
+
     return (
         <li className='list-group-item d-flex justify-content-between align-items-center'>
             <p className="mt-3">
@@ -12,7 +22,7 @@ function ExpenseItem(props) {
                 <span className="badge-primary badge-pill mr-3">
                     ${props.cost}
                 </span>
-                <RiDeleteBin6Line></RiDeleteBin6Line>
+                <RiDeleteBin6Line onClick={handleDeleteExpens}></RiDeleteBin6Line>
             </div>
 
         </li>

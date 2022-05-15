@@ -1,12 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ExpenseItem from './expence-item';
-
+import { AppContext } from '../../context/AppContext';
 function ExpensesList() {
-    const expenses = [
-        { id: 12, name: 'Ice Cream', cost: 20 },
-        { id: 13, name: 'Lunch', cost: 100 },
-        { id: 14, name: 'Groccery Shopping', cost: 150 },
-    ];
+    const { expenses } = useContext(AppContext);
     return (
         <ul className='list-group-flush'>
             {expenses.map((expense) => (
