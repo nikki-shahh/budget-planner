@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../../context/AppContext';
 
 function Expenses() {
+    const { expenses } = useContext(AppContext);
+
+    const totalExpenses = expenses.reduce((total, item) => {
+        return (total += item.cost);
+    }, 0);
+
     return (
         <div className="alert alert-secondary">
-            <span>Expenses <p>- $ 1500</p></span>
+            <span>Expenses <p>- $ {totalExpenses}</p></span>
         </div>
     );
 }
