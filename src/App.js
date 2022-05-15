@@ -3,6 +3,7 @@ import Balance from './components/balance-view';
 import Expenses from './components/expense-view/expenses-total';
 import Income from './components/income-view/income-total';
 import ExpensesList from './components/expense-view/expense-list';
+import AddExpense from './components/expense-view/add-expense';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -30,7 +31,14 @@ function App() {
           </div>
         </div>
       </div>
+
       <h3 className='mt-3'>Expenses</h3>
+      <h5 className='mt-3'>Add Expense</h5>
+      <div className='row mt-3'>
+        <div className='col-sm'>
+          <AddExpense />
+        </div>
+      </div>
       <div className='row mt-3'>
         <div className='col-sm'>
           <ExpensesList />
