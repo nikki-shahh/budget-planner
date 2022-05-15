@@ -1,10 +1,10 @@
 import React from 'react';
 import Balance from './components/balance-view';
 import Expenses from './components/expense-view/expenses-total';
-import Income from './components/income-view/income-total';
 import ExpensesList from './components/expense-view/expense-list';
 import AddExpense from './components/expense-view/add-expense';
 import { AppProvider } from './context/AppContext';
+import Incomes from './components/income-view/income-list';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -24,7 +24,7 @@ function App() {
           </div>
           <div className="row mt-2 d-flex justify-content-center">
             <div className="col-lg-2">
-              <Income />
+              <Incomes />
             </div>
             <div className="col-lg-2">
             </div>

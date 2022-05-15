@@ -1,11 +1,17 @@
 import React, { useContext } from 'react';
 import { AppContext } from "../../context/AppContext";
 
-function Income() {
+function Income(props) {
     const { income } = useContext(AppContext);
     return (
         <div className="alert alert-secondary">
-            <span>Income <p>$ {income}</p></span>
+            <span>Income
+                $ {income}
+                <button type='button' class='btn' onClick={props.handleEditClick}>
+                    Edit
+                </button>
+            </span>
+
         </div>
     );
 }
