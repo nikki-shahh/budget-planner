@@ -2,6 +2,7 @@ import React from 'react';
 import Balance from './components/balance-view';
 import Expenses from './components/expense-view/expenses-total';
 import Income from './components/income-view/income-total';
+import ExpensesList from './components/expense-view/expense-list';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -27,6 +28,12 @@ function App() {
           <div className="col-lg-2">
             <Income />
           </div>
+        </div>
+      </div>
+      <h3 className='mt-3'>Expenses</h3>
+      <div className='row mt-3'>
+        <div className='col-sm'>
+          <ExpensesList />
         </div>
       </div>
     </div>
