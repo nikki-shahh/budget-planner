@@ -25,7 +25,7 @@ function AddExpense() {
         <form onSubmit={onSubmit}>
             <div className="row">
                 <div className="col-sm">
-                    <label for="name"> Name of expense</label>
+                    <label> Name of expense</label>
                     <input
                         required="required"
                         type="text"
@@ -36,7 +36,7 @@ function AddExpense() {
                     ></input>
                 </div>
                 <div className="col-sm">
-                    <label for="cost"> Expense amount</label>
+                    <label> Expense amount</label>
                     <input
                         required="required"
                         type="text"
