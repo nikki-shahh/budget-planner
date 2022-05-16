@@ -7,7 +7,7 @@ function Income(props) {
         <div className="alert alert-secondary">
             <span>Income
                 $ {income}
-                <button type='button' class='btn' onClick={props.handleEditClick}>
+                <button type='button' className='btn' onClick={props.handleEditClick}>
                     Edit
                 </button>
             </span>
