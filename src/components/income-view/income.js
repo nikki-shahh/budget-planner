@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react';
-import Income from './income-total';
+import TotalIncome from './income-total';
 import EditIncome from './edit-income';
 import { AppContext } from '../../context/AppContext';
 
-function Incomes() {
+function Income() {
     const { income, dispatch } = useContext(AppContext);
     const [isEditing, setIsEditing] = useState(false);
 
@@ -24,10 +24,10 @@ function Incomes() {
             {isEditing ? (
                 <EditIncome handleSaveClick={handleSaveClick} income={income} />
             ) : (
-                <Income handleEditClick={handleEditClick} income={income} />
+                <TotalIncome handleEditClick={handleEditClick} income={income} />
             )}
         </div>
     );
 };
 
-export default Incomes;
+export default Income;
