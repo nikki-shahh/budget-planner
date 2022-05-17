@@ -7,8 +7,6 @@ function Balance() {
         return (total = total + item.cost);
     }, 0);
 
-    const alertType = totalExpenses > income ? 'alert-danger' : 'alert-success';
-
     return (
         <div className="alert alert-secondary">
             <span>Balance <p>$ {income - totalExpenses}</p></span>

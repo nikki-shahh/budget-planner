@@ -2,14 +2,13 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../../context/AppContext';
 import { v4 as uuidv4 } from 'uuid';
 
-function AddExpense() {
+function AddExpense(props) {
     const { dispatch } = useContext(AppContext);
     const [name, setName] = useState('');
     const [cost, setCost] = useState('');
 
     function onSubmit(event) {
         event.preventDefault();
-
         const expense = {
             id: uuidv4(),
             name: name,
@@ -19,6 +18,8 @@ function AddExpense() {
             type: 'ADD_EXPENSE',
             payload: expense,
         });
+        setName('');
+        setCost('');
     };
 
     return (

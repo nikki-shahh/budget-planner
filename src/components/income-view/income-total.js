@@ -1,12 +1,10 @@
 import React, { useContext } from 'react';
-import { AppContext } from "../../context/AppContext";
 
-function Income(props) {
-    const { income } = useContext(AppContext);
+function TotalIncome(props) {
     return (
         <div className="alert alert-secondary">
             <span>Income
-                $ {income}
+                $ {props.income}
                 <button type='button' className='btn' onClick={props.handleEditClick}>
                     Edit
                 </button>
@@ -16,4 +14,4 @@ function Income(props) {
     );
 }
 
-export default Income;
+export default TotalIncome;
