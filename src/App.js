@@ -13,7 +13,7 @@ function App() {
   return (
     <AppProvider>
       <div className="container">
-        <span className="logo row mt-5">
+        <span className="logo row d-flex justify-content-center mt-5">
           <img src={logo} className="logo" alt="logo" />
         </span>
         <div>
