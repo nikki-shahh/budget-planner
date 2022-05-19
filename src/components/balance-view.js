@@ -9,7 +9,7 @@ function Balance() {
 
     return (
         <div className="alert alert-secondary">
-            <span>Balance <p>$ {income - totalExpenses}</p></span>
+            <span>Balance <p>${income - totalExpenses}</p></span>
         </div>
     );
 }

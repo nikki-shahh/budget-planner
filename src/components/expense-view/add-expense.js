@@ -50,7 +50,7 @@ function AddExpense(props) {
             </div>
             <div className="row">
                 <div className="col-sm">
-                    <button type="submit" className="btn btn-secondary mt-3">
+                    <button type="submit" className="btn btn-success btn-lg mt-3" data-toggle="button" aria-pressed="false" autocomplete="off">
                         Add
                     </button>
                 </div>

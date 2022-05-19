@@ -4,10 +4,11 @@
 
 .logo {
   width: 300px;
-  justify-content: flex-start;
 }
 
 .App-link {
   color: #61dafb;
 }
-
+.list-group-item{
+  border-color :#2E7CF6;
+}
