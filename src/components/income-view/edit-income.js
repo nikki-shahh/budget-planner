@@ -14,7 +14,7 @@ function EditIncome(props) {
             />
             <button
                 type='button'
-                className='btn'
+                className='btn btn-success btn-md'
                 onClick={() => props.handleSaveClick(value)}
             >
                 Save

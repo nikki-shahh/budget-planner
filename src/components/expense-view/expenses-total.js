@@ -10,7 +10,8 @@ function Expenses() {
 
     return (
         <div className="alert alert-secondary">
-            <span>Expenses <p>- $ {totalExpenses}</p></span>
+            <span>Expenses <p>- ${totalExpenses}</p>
+            </span>
         </div>
     );
 }

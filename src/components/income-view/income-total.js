@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 function TotalIncome(props) {
     return (
         <div className="alert alert-secondary">
             <span>Income
-                $ {props.income}
+                ${props.income}
+                <br />
                 <button type='button' className='btn' onClick={props.handleEditClick}>
                     Edit
                 </button>

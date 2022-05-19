@@ -20,13 +20,15 @@ function Income() {
     };
 
     return (
-        <div className='alert alert-secondary p-3 d-flex align-items-center justify-content-between'>
-            {isEditing ? (
-                <EditIncome handleSaveClick={handleSaveClick} income={income} />
-            ) : (
-                <TotalIncome handleEditClick={handleEditClick} income={income} />
-            )}
-        </div>
+        <div>
+            {
+                isEditing ? (
+                    <EditIncome handleSaveClick={handleSaveClick} income={income} />
+                ) : (
+                    <TotalIncome handleEditClick={handleEditClick} income={income} />
+                )
+            }
+        </div >
     );
 };
 
