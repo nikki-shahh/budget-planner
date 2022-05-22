@@ -2,8 +2,9 @@
   text-align: center;
 }
 
-.logo {
+img.logo{
   width: 300px;
+  align-items: center;
 }
 
 .App-link {
