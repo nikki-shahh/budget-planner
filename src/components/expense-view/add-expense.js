@@ -12,7 +12,7 @@ function AddExpense(props) {
         const expense = {
             id: uuidv4(),
             name: name,
-            cost: parseInt(cost),
+            cost: parseFloat(cost),
         };
         dispatch({
             type: 'ADD_EXPENSE',

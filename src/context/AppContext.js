@@ -1,5 +1,4 @@
 import React, { createContext, useReducer } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 
 //update the state base on the action
 function AppReducer(state, action) {
@@ -36,9 +35,7 @@ export default AppReducer;
 //initial state when the app loads
 const initialState = {
     income: 0,
-    expenses: [
-
-    ],
+    expenses: [],
 };
 
 //creates the context in order to be used in components and use to get the state
