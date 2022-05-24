@@ -21,7 +21,7 @@ function ExpenseItem(props) {
             <div className="ml-3">
                 <span>
                     <span> ${props.cost} </span>
-                    <button className="btn"> Edit  </button>
+                    {/* <button className="btn"> Edit  </button> */}
                     <RiDeleteBin6Line onClick={handleDeleteExpense}></RiDeleteBin6Line>
                 </span>
             </div>
